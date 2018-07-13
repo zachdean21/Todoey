@@ -14,7 +14,8 @@
 		C20492FC20F25CE100FF2264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20492FB20F25CE100FF2264 /* Assets.xcassets */; };
 		C20492FF20F25CE100FF2264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20492FD20F25CE100FF2264 /* LaunchScreen.storyboard */; };
 		C29421D620F775AD00577738 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29421D520F775AC00577738 /* CategoryViewController.swift */; };
-		C2ACE3A120F5325E0050CC85 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2ACE39F20F5325E0050CC85 /* DataModel.xcdatamodeld */; };
+		C29421DA20F7AF2100577738 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29421D920F7AF2100577738 /* Item.swift */; };
+		C29421DC20F7AF2700577738 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29421DB20F7AF2700577738 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		C20492FE20F25CE100FF2264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C204930020F25CE100FF2264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C29421D520F775AC00577738 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		C2ACE3A020F5325E0050CC85 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		C29421D920F7AF2100577738 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C29421DB20F7AF2700577738 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E9DADB238EA98FE3F8F6308A /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
 		FAA92BB674DA1DDCEAE0207F /* Pods-Todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +89,8 @@
 		C204930620F27D0300FF2264 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C2ACE39F20F5325E0050CC85 /* DataModel.xcdatamodeld */,
+				C29421DB20F7AF2700577738 /* Category.swift */,
+				C29421D920F7AF2100577738 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,10 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29421DA20F7AF2100577738 /* Item.swift in Sources */,
 				C29421D620F775AD00577738 /* CategoryViewController.swift in Sources */,
 				C20492F720F25CE000FF2264 /* ToDoListViewController.swift in Sources */,
-				C2ACE3A120F5325E0050CC85 /* DataModel.xcdatamodeld in Sources */,
 				C20492F520F25CE000FF2264 /* AppDelegate.swift in Sources */,
+				C29421DC20F7AF2700577738 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,19 +445,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C2ACE39F20F5325E0050CC85 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C2ACE3A020F5325E0050CC85 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = C2ACE3A020F5325E0050CC85 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C20492E920F25CE000FF2264 /* Project object */;
 }
